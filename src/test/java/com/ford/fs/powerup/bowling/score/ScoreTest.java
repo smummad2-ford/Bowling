@@ -78,8 +78,7 @@ class ScoreTest {
         assertThat(value).isEqualTo(0);
         value = score.calculateScore(2);
         assertThat(value).isEqualTo(12);
-
-//        value = score.calculateScore(2);
-//        assertThat(value).isEqualTo(16);
+        value = score.calculateScore(2);
+        assertThat(value).isEqualTo(16);
     }
 }

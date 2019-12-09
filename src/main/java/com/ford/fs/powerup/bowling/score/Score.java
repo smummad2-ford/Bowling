@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Score {
     int totalScore = 0;
-    int prevRoll = 0;
+    int frameSize = 0;
     int rollCount= 0;
     int frameScore = 0;
     boolean isSpare = false;
@@ -24,14 +24,13 @@ public class Score {
         }
         if(rollCount % 2 == 0){
             frameScore=0;
-            prevRoll = pins;
             frameScore = pins;
             rollCount++;
             return totalScore;
         }
 
         frameScore +=pins;
-        totalScore += prevRoll + pins;
+        totalScore += frameScore;
         rollCount++;
         if(frameScore==10){
             isSpare = true;
