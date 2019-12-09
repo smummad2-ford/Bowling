@@ -8,7 +8,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-
 @SpringBootTest
 class ScoreTest {
 
@@ -63,4 +62,24 @@ class ScoreTest {
         assertThat(value).isEqualTo(11);
     }
 
+    @Test
+    void test_calculateScoreForSpare() {
+        score.calculateScore(1);
+        int value = score.calculateScore(9);
+        assertThat(value).isEqualTo(0);
+        value = score.calculateScore(2);
+        assertThat(value).isEqualTo(12);
+    }
+
+    @Test
+    void test_calculateScoreForSpare_2CompleteFrames() {
+        score.calculateScore(1);
+        int value = score.calculateScore(9);
+        assertThat(value).isEqualTo(0);
+        value = score.calculateScore(2);
+        assertThat(value).isEqualTo(12);
+
+//        value = score.calculateScore(2);
+//        assertThat(value).isEqualTo(16);
+    }
 }

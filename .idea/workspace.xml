@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efb488cb-4f34-4166-9eab-9f4622743fc3" name="Default Changelist" comment="Added few more junits">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/ford/fs/powerup/bowling/score/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/ford/fs/powerup/bowling/score/Score.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/ford/fs/powerup/bowling/score/ScoreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/ford/fs/powerup/bowling/score/ScoreTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/Score.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/ScoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/ScoreTest.java" afterDir="false" />
     </list>
@@ -44,29 +44,49 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/ScoreTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/Score.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/ScoreTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="79" selection-start-line="79" selection-end-line="79" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/Score.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="231">
+                  <caret line="26" column="20" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/ScoreTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="314">
+                  <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,17 +122,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="y" value="37" />
+    <option name="width" value="1657" />
+    <option name="height" value="1013" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ScoreTest">
+  <component name="RunManager" selected="JUnit.ScoreTest.test_calculateScoreForSpare_2CompleteFrames">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -247,40 +267,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScoreTest.test_calculateScoreFor1Frame_withThreeRolls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bowling.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ford.fs.powerup.bowling.score.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ford.fs.powerup.bowling.score" />
-      <option name="MAIN_CLASS_NAME" value="com.ford.fs.powerup.bowling.score.ScoreTest" />
-      <option name="METHOD_NAME" value="test_calculateScoreFor1Frame_withThreeRolls" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScoreTest.test_calculateScoreFor1Frame_withTwoRolls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bowling.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ford.fs.powerup.bowling.score.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ford.fs.powerup.bowling.score" />
-      <option name="MAIN_CLASS_NAME" value="com.ford.fs.powerup.bowling.score.ScoreTest" />
-      <option name="METHOD_NAME" value="test_calculateScoreFor1Frame_withTwoRolls" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ScoreTest.test_calculateScoreFor2Frames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling.test" />
       <extension name="coverage">
@@ -298,7 +284,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScoreTest.test_too_many_rolls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ScoreTest.test_calculateScoreFor2Frames_withOneInvalidNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling.test" />
       <extension name="coverage">
         <pattern>
@@ -308,7 +294,41 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ford.fs.powerup.bowling.score" />
       <option name="MAIN_CLASS_NAME" value="com.ford.fs.powerup.bowling.score.ScoreTest" />
-      <option name="METHOD_NAME" value="test_too_many_rolls" />
+      <option name="METHOD_NAME" value="test_calculateScoreFor2Frames_withOneInvalidNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreTest.test_calculateScoreForSpare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ford.fs.powerup.bowling.score.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ford.fs.powerup.bowling.score" />
+      <option name="MAIN_CLASS_NAME" value="com.ford.fs.powerup.bowling.score.ScoreTest" />
+      <option name="METHOD_NAME" value="test_calculateScoreForSpare" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreTest.test_calculateScoreForSpare_2CompleteFrames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ford.fs.powerup.bowling.score.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ford.fs.powerup.bowling.score" />
+      <option name="MAIN_CLASS_NAME" value="com.ford.fs.powerup.bowling.score.ScoreTest" />
+      <option name="METHOD_NAME" value="test_calculateScoreForSpare_2CompleteFrames" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -396,11 +416,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ScoreTest.test_calculateScoreForSpare_2CompleteFrames" />
         <item itemvalue="JUnit.ScoreTest" />
+        <item itemvalue="JUnit.ScoreTest.test_calculateScoreForSpare" />
+        <item itemvalue="JUnit.ScoreTest.test_calculateScoreFor2Frames_withOneInvalidNumber" />
         <item itemvalue="JUnit.ScoreTest.test_calculateScoreFor2Frames" />
-        <item itemvalue="JUnit.ScoreTest.test_calculateScoreFor1Frame_withThreeRolls" />
-        <item itemvalue="JUnit.ScoreTest.test_too_many_rolls" />
-        <item itemvalue="JUnit.ScoreTest.test_calculateScoreFor1Frame_withTwoRolls" />
       </list>
     </recent_temporary>
   </component>
@@ -417,7 +437,9 @@
       <workItem from="1575472038449" duration="135000" />
       <workItem from="1575472198261" duration="2346000" />
       <workItem from="1575556542291" duration="5462000" />
-      <workItem from="1575644955415" duration="504000" />
+      <workItem from="1575644955415" duration="1494000" />
+      <workItem from="1575902494899" duration="446000" />
+      <workItem from="1575902993727" duration="1502000" />
     </task>
     <task id="LOCAL-00001" summary="Added logic to accept first frame and return the total.">
       <created>1575559907950</created>
@@ -430,45 +452,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScoreTest_test_too_many_rolls - 2019.12.06 at 09h 49m 42s.xml">
-      <configuration name="ScoreTest.test_too_many_rolls" configurationId="JUnit" />
+    <history-entry file="ScoreTest_test_calculateScoreForSpare - 2019.12.09 at 09h 55m 09s.xml">
+      <configuration name="ScoreTest.test_calculateScoreForSpare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScoreTest - 2019.12.06 at 09h 49m 49s.xml">
+    <history-entry file="ScoreTest - 2019.12.09 at 09h 55m 43s.xml">
       <configuration name="ScoreTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScoreTest_test_calculateScoreFor1Frame_withThreeRolls - 2019.12.06 at 09h 55m 53s.xml">
-      <configuration name="ScoreTest.test_calculateScoreFor1Frame_withThreeRolls" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScoreTest_test_calculateScoreFor1Frame_withThreeRolls - 2019.12.06 at 09h 58m 00s.xml">
-      <configuration name="ScoreTest.test_calculateScoreFor1Frame_withThreeRolls" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScoreTest_test_too_many_rolls - 2019.12.06 at 10h 10m 02s.xml">
-      <configuration name="ScoreTest.test_too_many_rolls" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScoreTest - 2019.12.06 at 10h 10m 14s.xml">
+    <history-entry file="ScoreTest - 2019.12.09 at 09h 59m 59s.xml">
       <configuration name="ScoreTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScoreTest_test_calculateScoreFor1Frame_withThreeRolls - 2019.12.06 at 10h 10m 58s.xml">
-      <configuration name="ScoreTest.test_calculateScoreFor1Frame_withThreeRolls" configurationId="JUnit" />
+    <history-entry file="ScoreTest_test_calculateScoreForSpare_2CompleteFrames - 2019.12.09 at 10h 01m 58s.xml">
+      <configuration name="ScoreTest.test_calculateScoreForSpare_2CompleteFrames" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScoreTest_test_calculateScoreFor2Frames - 2019.12.06 at 10h 12m 35s.xml">
-      <configuration name="ScoreTest.test_calculateScoreFor2Frames" configurationId="JUnit" />
+    <history-entry file="ScoreTest_test_calculateScoreForSpare_2CompleteFrames - 2019.12.09 at 10h 02m 10s.xml">
+      <configuration name="ScoreTest.test_calculateScoreForSpare_2CompleteFrames" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScoreTest_test_calculateScoreFor2Frames - 2019.12.06 at 10h 13m 27s.xml">
-      <configuration name="ScoreTest.test_calculateScoreFor2Frames" configurationId="JUnit" />
+    <history-entry file="ScoreTest_test_calculateScoreForSpare_2CompleteFrames - 2019.12.09 at 10h 03m 35s.xml">
+      <configuration name="ScoreTest.test_calculateScoreForSpare_2CompleteFrames" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScoreTest - 2019.12.06 at 10h 13m 52s.xml">
+    <history-entry file="ScoreTest_test_calculateScoreForSpare_2CompleteFrames - 2019.12.09 at 10h 05m 28s.xml">
+      <configuration name="ScoreTest.test_calculateScoreForSpare_2CompleteFrames" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScoreTest - 2019.12.09 at 10h 05m 36s.xml">
+      <configuration name="ScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScoreTest - 2019.12.09 at 10h 06m 01s.xml">
+      <configuration name="ScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScoreTest - 2019.12.09 at 10h 06m 11s.xml">
       <configuration name="ScoreTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8447000" />
+    <option name="totallyTimeSpent" value="11385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.061239194" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22334294" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -477,8 +499,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35006785" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39891452" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30800542" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39891452" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -514,7 +536,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/Score.java</url>
-          <line>14</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -558,20 +580,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/Score.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/ScoreTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="221">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
