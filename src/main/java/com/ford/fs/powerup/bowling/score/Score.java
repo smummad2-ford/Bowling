@@ -7,32 +7,54 @@ import org.springframework.stereotype.Component;
 public class Score {
     int totalScore = 0;
     int frameSize = 0;
-    int rollCount= 0;
+    int rollCount = 0;
     int frameScore = 0;
     boolean isSpare = false;
+    boolean isStrike = false;
+
 
     public int calculateScore(int pins) {
-        if(isSpare){
+        if(isStrike) {
+            if(rollCount%2 == 0) {
+                frameScore = pins;
+                rollCount++;
+                return totalScore;
+            }
+            frameScore += pins;
+            return totalScore + (frameScore * 2) + 10;
+        }
+
+        if (pins == 10) {
+            if (rollCount % 2 == 0) {
+                rollCount++;
+            }
+            rollCount++;
+            isStrike = true;
+            frameScore = pins;
+            return totalScore;
+        }
+
+        if (isSpare) {
             totalScore += pins;
             frameScore = pins;
             isSpare = false;
             rollCount++;
             return totalScore;
         }
-        if(pins>10){
+        if (pins > 10) {
             throw new IllegalArgumentException("pin cannot be more than 10");
         }
-        if(rollCount % 2 == 0){
-            frameScore=0;
+        if (rollCount % 2 == 0) {
+            frameScore = 0;
             frameScore = pins;
             rollCount++;
             return totalScore;
         }
 
-        frameScore +=pins;
+        frameScore += pins;
         totalScore += frameScore;
         rollCount++;
-        if(frameScore==10){
+        if (frameScore == 10) {
             isSpare = true;
             return 0;
         }

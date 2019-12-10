@@ -81,4 +81,14 @@ class ScoreTest {
         value = score.calculateScore(2);
         assertThat(value).isEqualTo(16);
     }
+
+    @Test
+    void test_calculateScoreForStrikeCase(){
+        int value = score.calculateScore(10);
+        assertThat(value).isEqualTo(0);
+        value = score.calculateScore(5);
+        assertThat(value).isEqualTo(0);
+        value = score.calculateScore(3);
+        assertThat(value).isEqualTo(26);
+    }
 }
