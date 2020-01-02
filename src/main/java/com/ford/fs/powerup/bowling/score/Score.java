@@ -59,8 +59,15 @@ public class Score {
             setFrameScoreAndIncrementRollCount(pins);
             return totalScore;
         }
+        isPreviousRollStrike = false;
         frameScore += pins;
-        return totalScore + (frameScore * 2) + 10;
+
+        if(handleSpareCase()) {
+            totalScore += frameScore + 10;
+            return totalScore;
+        }
+        totalScore += (frameScore * 2) + 10;
+        return totalScore;
     }
 
     private boolean handleStrikeCase(int pins) {
