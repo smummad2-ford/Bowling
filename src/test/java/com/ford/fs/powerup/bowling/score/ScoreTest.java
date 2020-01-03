@@ -102,7 +102,7 @@ class ScoreTest {
         assertThat(value).isEqualTo(20);
     }
 
- /*   @Test
+    @Test
     void test_calculateScoreForStrikeAndSpareAndRegularCase(){
         int value = score.calculateScore(10);
         assertThat(value).isEqualTo(0);
@@ -114,7 +114,7 @@ class ScoreTest {
         assertThat(value).isEqualTo(35);
         value = score.calculateScore(3);
         assertThat(value).isEqualTo(43);
-    }*/
+    }
 
 
 }
