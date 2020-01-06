@@ -1,5 +1,6 @@
 package com.ford.fs.powerup.bowling.score;
 
+import com.ford.fs.powerup.bowling.game.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,33 +10,33 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
-class ScoreTest {
+class GameTest {
 
-//    private Score score;
-//
-//    @BeforeEach
-//    void setUp() {
-//        score = new Score();
-//    }
-//
-//    @Test
-//    void test_calculateScoreWhenZeroIsRolled() {
-//        int value = score.calculateScore(0);
-//        assertThat(value).isEqualTo(0);
-//    }
-//
-//    @Test
-//    void test_calculateScoreWhenNonZeroAndNonSpecial() {
-//        int value = score.calculateScore(7);
-//        assertThat(value).isEqualTo(0);
-//    }
-//
-//    @Test
-//    void test_calculateScoreFor1Frame_withTwoRolls() {
-//        score.calculateScore(1);
-//        int value = score.calculateScore(2);
-//        assertThat(value).isEqualTo(3);
-//    }
+    private Game game;
+
+    @BeforeEach
+    void setUp() {
+        game = new Game();
+    }
+
+    @Test
+    void test_calculateScoreWhenZeroIsRolled() {
+        int value = game.calculateScore(0);
+        assertThat(value).isEqualTo(0);
+    }
+
+    @Test
+    void test_calculateScoreWhenNonZeroAndNonSpecial() {
+        int value = game.calculateScore(7);
+        assertThat(value).isEqualTo(0);
+    }
+
+    @Test
+    void test_calculateScoreFor1Frame_withTwoRolls() {
+        game.calculateScore(1);
+        int value = game.calculateScore(2);
+        assertThat(value).isEqualTo(3);
+    }
 //
 //    @Test
 //    void test_too_many_rolls(){
