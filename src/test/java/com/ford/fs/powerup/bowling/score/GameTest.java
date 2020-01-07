@@ -37,83 +37,86 @@ class GameTest {
         int value = game.calculateScore(2);
         assertThat(value).isEqualTo(3);
     }
+
+    @Test
+    void test_calculateScoreFor1Frame_withThreeRolls() {
+        game.calculateScore(1);
+        game.calculateScore(2);
+        int value = game.calculateScore(5);
+        assertThat(value).isEqualTo(3);
+    }
 //
-//    @Test
-//    void test_too_many_rolls(){
-//        IllegalArgumentException myException = Assertions.assertThrows(IllegalArgumentException.class, () -> {
-//            score.calculateScore(11);
-//        });
-//        assertTrue(myException.getMessage().contains("pin cannot be more than 10"));
-//    }
-//
-//    @Test
-//    void test_calculateScoreFor1Frame_withThreeRolls() {
-//        score.calculateScore(1);
-//        score.calculateScore(2);
-//        int value = score.calculateScore(5);
-//        assertThat(value).isEqualTo(3);
-//    }
-//
-//    @Test
-//    void test_calculateScoreFor2Frames(){
-//        score.calculateScore(1);
-//        score.calculateScore(2);
-//        score.calculateScore(5);
-//        int value = score.calculateScore(3);
-//        assertThat(value).isEqualTo(11);
-//    }
-//
+    @Test
+    void test_calculateScoreFor2Frames(){
+        game.calculateScore(1);
+        game.calculateScore(2);
+        game.calculateScore(5);
+        int value = game.calculateScore(3);
+        assertThat(value).isEqualTo(11);
+    }
+
+    @Test
+    void test_calculateScoreFor3Frames(){
+        game.calculateScore(1);
+        game.calculateScore(2);
+        game.calculateScore(3);
+        game.calculateScore(4);
+        game.calculateScore(5);
+        int value = game.calculateScore(3);
+        assertThat(value).isEqualTo(18);
+    }
+
 //    @Test
 //    void test_calculateScoreForSpare() {
-//        score.calculateScore(1);
-//        int value = score.calculateScore(9);
+//        game.calculateScore(1);
+//        int value = game.calculateScore(9);
 //        assertThat(value).isEqualTo(0);
-//        value = score.calculateScore(2);
+//        value = game.calculateScore(2);
 //        assertThat(value).isEqualTo(12);
 //    }
-//
+
 //    @Test
 //    void test_calculateScoreForSpare_2CompleteFrames() {
-//        score.calculateScore(1);
-//        int value = score.calculateScore(9);
+//        game.calculateScore(1);
+//        int value = game.calculateScore(9);
 //        assertThat(value).isEqualTo(0);
-//        value = score.calculateScore(2);
+//        value = game.calculateScore(2);
 //        assertThat(value).isEqualTo(12);
-//        value = score.calculateScore(2);
+//        value = game.calculateScore(2);
 //        assertThat(value).isEqualTo(16);
 //    }
 //
 //    @Test
 //    void test_calculateScoreForStrikeCase(){
-//        int value = score.calculateScore(10);
+//        int value = game.calculateScore(10);
 //        assertThat(value).isEqualTo(0);
-//        value = score.calculateScore(5);
+//        value = game.calculateScore(5);
 //        assertThat(value).isEqualTo(0);
-//        value = score.calculateScore(3);
+//        value = game.calculateScore(3);
 //        assertThat(value).isEqualTo(26);
 //    }
 //
 //    @Test
 //    void test_calculateScoreForStrikeAndSpareCase(){
-//        int value = score.calculateScore(10);
+//        int value = game.calculateScore(10);
 //        assertThat(value).isEqualTo(0);
-//        value = score.calculateScore(5);
+//        value = game.calculateScore(5);
 //        assertThat(value).isEqualTo(0);
-//        value = score.calculateScore(5);
+//        value = game.calculateScore(5);
 //        assertThat(value).isEqualTo(20);
 //    }
 //
 //    @Test
 //    void test_calculateScoreForStrikeAndSpareAndRegularCase(){
-//        int value = score.calculateScore(10);
+//        int value = game.calculateScore(10);
 //        assertThat(value).isEqualTo(0);
-//        value = score.calculateScore(5);
+//        value = game.calculateScore(5);
 //        assertThat(value).isEqualTo(0);
-//        value = score.calculateScore(5);
+//        value = game.calculateScore(5);
 //        assertThat(value).isEqualTo(20);
-//        value = score.calculateScore(5);
+//        value = game.calculateScore(5);
 //        assertThat(value).isEqualTo(35);
-//        value = score.calculateScore(3);
+//        value = game.calculateScore(3);
 //        assertThat(value).isEqualTo(43);
 //    }
 
