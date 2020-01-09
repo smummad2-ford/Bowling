@@ -14,9 +14,13 @@ public class RegularFrame extends Frame {
     @Override
     public int addPins(int pins) {
         if (rollCount == 2) {
+            if (getScore() == 10){
+
+            }
             return pins;
         }
         rolls[rollCount++] = pins;
+
         return -1;
     }
 }
