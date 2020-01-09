@@ -45,7 +45,7 @@ class GameTest {
         int value = game.calculateScore(5);
         assertThat(value).isEqualTo(3);
     }
-//
+
     @Test
     void test_calculateScoreFor2Frames(){
         game.calculateScore(1);
@@ -66,14 +66,14 @@ class GameTest {
         assertThat(value).isEqualTo(18);
     }
 
-//    @Test
-//    void test_calculateScoreForSpare() {
-//        game.calculateScore(1);
-//        int value = game.calculateScore(9);
-//        assertThat(value).isEqualTo(0);
-//        value = game.calculateScore(2);
-//        assertThat(value).isEqualTo(12);
-//    }
+   /* @Test
+    void test_calculateScoreForSpare() {
+        game.calculateScore(1);
+        int value = game.calculateScore(9);
+        assertThat(value).isEqualTo(0);
+        value = game.calculateScore(2);
+        assertThat(value).isEqualTo(12);
+    }*/
 
 //    @Test
 //    void test_calculateScoreForSpare_2CompleteFrames() {

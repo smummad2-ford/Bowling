@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efb488cb-4f34-4166-9eab-9f4622743fc3" name="Default Changelist" comment="Added few more junits">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Roll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Game.java" afterDir="false" />
@@ -48,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="72" selection-end-column="37" />
+            <state relative-caret-position="204">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,10 +71,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="268">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
-                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,15 +141,15 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/ScoreWithArraysTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/ScoreTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/game/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Game.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/GameTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Frame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Roll.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Frame.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="173" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -158,8 +158,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -457,10 +457,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.test_calculateScoreFor1Frame_withThreeRolls" />
+        <item itemvalue="JUnit.GameTest.test_calculateScoreFor2Frames" />
         <item itemvalue="JUnit.GameTest.test_calculateScoreForSpare" />
         <item itemvalue="JUnit.GameTest.test_calculateScoreFor3Frames" />
-        <item itemvalue="JUnit.GameTest.test_calculateScoreFor2Frames" />
-        <item itemvalue="JUnit.GameTest.test_calculateScoreFor1Frame_withThreeRolls" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +486,8 @@
       <workItem from="1578062548083" duration="4288000" />
       <workItem from="1578322381428" duration="1756000" />
       <workItem from="1578324189371" duration="1164000" />
-      <workItem from="1578407706192" duration="2943000" />
+      <workItem from="1578407706192" duration="5922000" />
+      <workItem from="1578580900150" duration="415000" />
     </task>
     <task id="LOCAL-00001" summary="Added logic to accept first frame and return the total.">
       <created>1575559907950</created>
@@ -499,45 +500,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_test_calculateScoreFor1Frame_withThreeRolls - 2020.01.07 at 10h 05m 55s.xml">
+    <history-entry file="GameTest - 2020.01.08 at 09h 46m 34s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest - 2020.01.08 at 09h 54m 29s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest - 2020.01.08 at 09h 54m 52s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest - 2020.01.08 at 09h 55m 04s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest - 2020.01.08 at 09h 55m 50s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_test_calculateScoreFor1Frame_withThreeRolls - 2020.01.08 at 09h 56m 57s.xml">
       <configuration name="GameTest.test_calculateScoreFor1Frame_withThreeRolls" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2020.01.07 at 10h 06m 10s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_test_calculateScoreFor1Frame_withThreeRolls - 2020.01.08 at 09h 59m 57s.xml">
+      <configuration name="GameTest.test_calculateScoreFor1Frame_withThreeRolls" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2020.01.07 at 10h 08m 31s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2020.01.07 at 10h 09m 33s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_test_calculateScoreFor2Frames - 2020.01.07 at 10h 17m 58s.xml">
+    <history-entry file="GameTest_test_calculateScoreFor2Frames - 2020.01.09 at 09h 42m 25s.xml">
       <configuration name="GameTest.test_calculateScoreFor2Frames" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_test_calculateScoreFor3Frames - 2020.01.07 at 10h 19m 28s.xml">
-      <configuration name="GameTest.test_calculateScoreFor3Frames" configurationId="JUnit" />
+    <history-entry file="GameTest - 2020.01.09 at 09h 42m 57s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_test_calculateScoreForSpare - 2020.01.07 at 10h 20m 09s.xml">
-      <configuration name="GameTest.test_calculateScoreForSpare" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_test_calculateScoreForSpare - 2020.01.07 at 10h 20m 51s.xml">
-      <configuration name="GameTest.test_calculateScoreForSpare" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_test_calculateScoreForSpare - 2020.01.07 at 10h 21m 01s.xml">
-      <configuration name="GameTest.test_calculateScoreForSpare" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_test_calculateScoreForSpare - 2020.01.07 at 10h 23m 28s.xml">
-      <configuration name="GameTest.test_calculateScoreForSpare" configurationId="JUnit" />
+    <history-entry file="GameTest - 2020.01.09 at 09h 46m 12s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32065000" />
+    <option name="totallyTimeSpent" value="35459000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1887608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19164266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -546,8 +547,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19674355" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3202171" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33785617" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3202171" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -556,7 +557,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32807216" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32700136" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3283582" />
       <window_info anchor="bottom" id="Extract Method" order="15" weight="0.32919955" />
@@ -635,6 +636,36 @@
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Game.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Game.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Game.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Frame.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Frame.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -647,20 +678,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.13.2/616a8ca81b9a1a58e3c8cd8c5d7395eb548ce57/assertj-core-3.13.2-sources.jar!/org/assertj/core/api/Assertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="1289" column="11" selection-start-line="1289" selection-start-column="5" selection-end-line="1289" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.5.2/22b57242e953bf2de96fd5a122bd697f18b2fcd2/junit-jupiter-api-5.5.2-sources.jar!/org/junit/jupiter/api/Assertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="2950" column="42" selection-start-line="2950" selection-start-column="42" selection-end-line="2950" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.13.2/616a8ca81b9a1a58e3c8cd8c5d7395eb548ce57/assertj-core-3.13.2-sources.jar!/org/assertj/core/api/Assertions.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.5.2/22b57242e953bf2de96fd5a122bd697f18b2fcd2/junit-jupiter-api-5.5.2-sources.jar!/org/junit/jupiter/api/Assertions.java" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -668,13 +687,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.5.2/44d1543a802a072d87cc146d9d96223d61683617/junit-jupiter-engine-5.5.2-sources.jar!/org/junit/jupiter/engine/execution/InvocationInterceptorChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.5.2/44d1543a802a072d87cc146d9d96223d61683617/junit-jupiter-engine-5.5.2-sources.jar!/org/junit/jupiter/engine/execution/InvocationInterceptorChain.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -682,13 +695,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.2/32912ebbdeda6dcc83fe50d0ca112a930a777b5f/junit-platform-commons-1.5.2-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="677" selection-start-line="677" selection-end-line="677" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.2/32912ebbdeda6dcc83fe50d0ca112a930a777b5f/junit-platform-commons-1.5.2-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/ScoreWithArrays.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/Score.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/BowlingApplication.java">
@@ -699,6 +706,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/score/game/Game.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Roll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/ScoreWithArraysTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -711,8 +725,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/fs/powerup/bowling/score/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="72" selection-end-column="37" />
+        <state relative-caret-position="204">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -721,27 +735,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        <state relative-caret-position="240">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Roll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ford/fs/powerup/bowling/game/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="268">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
-            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -9,11 +9,16 @@ public class Game {
     private Frame currentFrame;
 
     public void roll(int pins){
-        if(framesList.isEmpty() || currentFrame.isClosed()){
+        if(framesList.isEmpty()){
             currentFrame = new Frame();
             framesList.add(currentFrame);
         }
-        currentFrame.addPins(pins);
+        if(currentFrame.addPins(pins)>-1)
+        {
+            currentFrame = new Frame();
+            currentFrame.addPins(pins);
+            framesList.add(currentFrame);
+        }
     }
 
     public int calculateScore(int pins) {

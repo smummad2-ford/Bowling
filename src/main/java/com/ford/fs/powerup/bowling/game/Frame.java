@@ -1,27 +1,22 @@
 package com.ford.fs.powerup.bowling.game;
 
 public class Frame {
-    private int frameScore;
     private int rollCount;
     private boolean isClosed;
-    private boolean isSpare;
-    private Roll roll;
+    int[] rolls =new int[2];
 
     public int getScore() {
-        if(!isClosed || isSpare)
+        if(rollCount != 2)
             return 0;
-        return frameScore;
+        return rolls[0]+rolls[1];
     }
 
-    public void addPins(int pins) {
-        rollCount++;
+    public int addPins(int pins) {
         if(rollCount == 2) {
-            isClosed = true;
+            return pins;
         }
-        frameScore += pins;
-        if(frameScore==10){
-            isSpare=true;
-        }
+        rolls[rollCount++] = pins;
+        return -1;
     }
 
     public boolean isClosed() {
