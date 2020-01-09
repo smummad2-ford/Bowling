@@ -1,13 +1,11 @@
 package com.ford.fs.powerup.bowling.score;
 
 import com.ford.fs.powerup.bowling.game.*;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
 class GameTest {

@@ -10,12 +10,12 @@ public class Game {
 
     public void roll(int pins){
         if(framesList.isEmpty()){
-            currentFrame = new Frame();
+            currentFrame = new RegularFrame();
             framesList.add(currentFrame);
         }
         if(currentFrame.addPins(pins)>-1)
         {
-            currentFrame = new Frame();
+            currentFrame = new RegularFrame();
             currentFrame.addPins(pins);
             framesList.add(currentFrame);
         }
