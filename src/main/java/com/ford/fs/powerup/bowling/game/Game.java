@@ -5,27 +5,27 @@ import java.util.List;
 
 public class Game {
 
-    private List<Frame> framesList = new ArrayList<>();
-    private Frame currentFrame;
+    private List<Context> contextList = new ArrayList<>();
+    private Context currentFrame;
 
     public void roll(int pins){
-        if(framesList.isEmpty()){
-            currentFrame = new RegularFrame();
-            framesList.add(currentFrame);
+        if(contextList.isEmpty()){
+            currentFrame = new Context();
+            contextList.add(currentFrame);
         }
         if(currentFrame.addPins(pins)>-1)
         {
-            currentFrame = new RegularFrame();
+            currentFrame = new Context();
             currentFrame.addPins(pins);
-            framesList.add(currentFrame);
+            contextList.add(currentFrame);
         }
     }
 
     public int calculateScore(int pins) {
         roll(pins);
         int totalScore = 0;
-        for(Frame frame : framesList) {
-                totalScore += frame.getScore();
+        for(Context context : contextList) {
+                totalScore += context.getScore();
         }
         return totalScore;
     }
