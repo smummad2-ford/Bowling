@@ -23,8 +23,14 @@ public class RegularFrame extends Frame {
             return pins;
         }
         rolls.add(pins);
-        if (getScore() == 10){
+        Integer pinsSum=0;
+        for(int roll:rolls)
+            pinsSum+=roll;
+        if (pinsSum == 10){
+            if(rolls.size() == 2)
             context.updateState( new SpareFrame(context, rolls));
+            else
+                context.updateState(new StrikeFrame(context, rolls));
         }
         return -1;
     }

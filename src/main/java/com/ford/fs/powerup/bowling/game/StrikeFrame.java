@@ -1,0 +1,26 @@
+package com.ford.fs.powerup.bowling.game;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StrikeFrame extends Frame {
+    List<Integer> rolls = new ArrayList<>();
+    public StrikeFrame(Context context, List<Integer> rolls) {
+        super(context);
+        this.rolls=rolls;
+    }
+
+    @Override
+    public int getScore() {
+        if(rolls.size()<3)
+            return 0;
+        return rolls.get(0)+rolls.get(1)+rolls.get(2);
+    }
+
+    @Override
+    public int addPins(int pins) {
+        if(rolls.size()<=3)
+            rolls.add(pins);
+        return pins;
+    }
+}

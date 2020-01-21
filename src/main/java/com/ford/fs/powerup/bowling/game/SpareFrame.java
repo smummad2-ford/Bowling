@@ -6,7 +6,6 @@ public class SpareFrame extends Frame {
 
 
     private List<Integer> rolls;
-    boolean isCalled = false;
 
     public SpareFrame(Context context, List<Integer> rolls) {
         super(context);
@@ -14,13 +13,13 @@ public class SpareFrame extends Frame {
     }
 
     public  int getScore(){
-        if(!isCalled) return 0;
+        if(rolls.size()<3) return 0;
         return rolls.get(0) + rolls.get(1) + rolls.get(2);
     }
 
     public  int addPins(int pins){
-         isCalled = true;
-         this.rolls.add(pins);
+         if(rolls.size()<3)
+            this.rolls.add(pins);
          return pins;
     }
 }

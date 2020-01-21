@@ -83,40 +83,41 @@ class GameTest {
         value = game.calculateScore(2);
         assertThat(value).isEqualTo(16);
     }
+
+    @Test
+    void test_calculateScoreForStrikeCase(){
+        int value = game.calculateScore(10);
+        assertThat(value).isEqualTo(0);
+        value = game.calculateScore(5);
+        assertThat(value).isEqualTo(0);
+        value = game.calculateScore(3);
+        assertThat(value).isEqualTo(26);
+    }
+
 //
-//    @Test
-//    void test_calculateScoreForStrikeCase(){
-//        int value = game.calculateScore(10);
-//        assertThat(value).isEqualTo(0);
-//        value = game.calculateScore(5);
-//        assertThat(value).isEqualTo(0);
-//        value = game.calculateScore(3);
-//        assertThat(value).isEqualTo(26);
-//    }
+    @Test
+    void test_calculateScoreForStrikeAndSpareCase(){
+        int value = game.calculateScore(10);
+        assertThat(value).isEqualTo(0);
+        value = game.calculateScore(5);
+        assertThat(value).isEqualTo(0);
+        value = game.calculateScore(5);
+        assertThat(value).isEqualTo(20);
+    }
 //
-//    @Test
-//    void test_calculateScoreForStrikeAndSpareCase(){
-//        int value = game.calculateScore(10);
-//        assertThat(value).isEqualTo(0);
-//        value = game.calculateScore(5);
-//        assertThat(value).isEqualTo(0);
-//        value = game.calculateScore(5);
-//        assertThat(value).isEqualTo(20);
-//    }
-//
-//    @Test
-//    void test_calculateScoreForStrikeAndSpareAndRegularCase(){
-//        int value = game.calculateScore(10);
-//        assertThat(value).isEqualTo(0);
-//        value = game.calculateScore(5);
-//        assertThat(value).isEqualTo(0);
-//        value = game.calculateScore(5);
-//        assertThat(value).isEqualTo(20);
-//        value = game.calculateScore(5);
-//        assertThat(value).isEqualTo(35);
-//        value = game.calculateScore(3);
-//        assertThat(value).isEqualTo(43);
-//    }
+    @Test
+    void test_calculateScoreForStrikeAndSpareAndRegularCase(){
+        int value = game.calculateScore(10);
+        assertThat(value).isEqualTo(0);
+        value = game.calculateScore(5);
+        assertThat(value).isEqualTo(0);
+        value = game.calculateScore(5);
+        assertThat(value).isEqualTo(20);
+        value = game.calculateScore(5);
+        assertThat(value).isEqualTo(35);
+        value = game.calculateScore(3);
+        assertThat(value).isEqualTo(43);
+    }
 
 
 }

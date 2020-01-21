@@ -6,19 +6,22 @@ import java.util.List;
 public class Game {
 
     private List<Context> contextList = new ArrayList<>();
-    private Context currentFrame;
+    private Context newContext;
 
     public void roll(int pins){
         if(contextList.isEmpty()){
-            currentFrame = new Context();
-            contextList.add(currentFrame);
+            newContext = new Context();
+            contextList.add(newContext);
         }
-        if(currentFrame.addPins(pins)>-1)
-        {
-            currentFrame = new Context();
-            currentFrame.addPins(pins);
-            contextList.add(currentFrame);
+        for(Context context:contextList) {
+            if (context.addPins(pins) == -1) {
+               return;
+            }
         }
+
+        newContext = new Context();
+        newContext.addPins(pins);
+        contextList.add(newContext);
     }
 
     public int calculateScore(int pins) {
