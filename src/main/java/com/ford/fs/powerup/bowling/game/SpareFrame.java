@@ -5,11 +5,8 @@ import java.util.List;
 public class SpareFrame extends Frame {
 
 
-    private List<Integer> rolls;
-
     public SpareFrame(Context context, List<Integer> rolls) {
-        super(context);
-        this.rolls = rolls;
+        super(context, rolls);
     }
 
     public  int getScore(){

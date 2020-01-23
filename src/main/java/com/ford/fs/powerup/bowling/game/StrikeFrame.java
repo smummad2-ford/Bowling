@@ -1,13 +1,10 @@
 package com.ford.fs.powerup.bowling.game;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class StrikeFrame extends Frame {
-    List<Integer> rolls = new ArrayList<>();
     public StrikeFrame(Context context, List<Integer> rolls) {
-        super(context);
-        this.rolls=rolls;
+        super(context,rolls);
     }
 
     @Override
