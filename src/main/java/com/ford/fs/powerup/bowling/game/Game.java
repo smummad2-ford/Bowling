@@ -22,14 +22,24 @@ public class Game {
         newContext = new Context();
         newContext.addPins(pins);
         contextList.add(newContext);
+
     }
 
     public int calculateScore(int pins) {
-        roll(pins);
-        int totalScore = 0;
-        for(Context context : contextList) {
-                totalScore += context.getScore();
+
+        if (contextList.size()> 10 && contextList.get(9).isComplete()) {
+
+            throw new RuntimeException("game ended");
+
         }
+        roll(pins);
+
+        int totalScore = 0;
+
+        for (Context context : contextList) {
+            totalScore += context.getScore();
+        }
+
         return totalScore;
     }
 }

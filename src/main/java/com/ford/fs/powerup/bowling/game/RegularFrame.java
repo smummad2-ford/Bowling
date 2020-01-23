@@ -1,13 +1,11 @@
 package com.ford.fs.powerup.bowling.game;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class RegularFrame extends Frame {
-    List<Integer> rolls = new ArrayList<>();
 
-    public RegularFrame(Context context) {
-        super(context);
+    public RegularFrame(Context context,List<Integer> rolls) {
+        super(context,rolls);
     }
 
     @Override
@@ -15,6 +13,11 @@ public class RegularFrame extends Frame {
         if (rolls.size() != 2)
             return 0;
         return rolls.get(0) + rolls.get(1);
+    }
+
+    public boolean isComplete()
+    {
+        return rolls.size()==2;
     }
 
     @Override

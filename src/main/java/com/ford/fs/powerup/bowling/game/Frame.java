@@ -7,7 +7,11 @@ public abstract class Frame {
     protected Context context;
     protected List<Integer> rolls;
 
+
+
     public abstract int getScore();
+
+    public abstract boolean isComplete();
 
     public abstract int addPins(int pins);
 

@@ -15,6 +15,11 @@ public class StrikeFrame extends Frame {
     }
 
     @Override
+    public boolean isComplete() {
+        return rolls.size()==3;
+    }
+
+    @Override
     public int addPins(int pins) {
         if(rolls.size()<=3)
             rolls.add(pins);

@@ -119,5 +119,50 @@ class GameTest {
         assertThat(value).isEqualTo(43);
     }
 
+    @Test
+    void test_calculateScoreFor12Strikes(){
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        int value = game.calculateScore(10);
+        assertThat(value).isEqualTo(300);
+
+    }
+
+    @Test
+    void test_calculateScoreFor13Strikes(){
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        game.calculateScore(10);
+        int value = game.calculateScore(10);
+        assertThat(value).isEqualTo(300);
+
+    }
+
+    @Test
+    void test_calculateScoreForframescoreZero() {
+        game.calculateScore(0);
+        game.calculateScore(0);
+        game.calculateScore(0);
+        int value = game.calculateScore(0);
+        assertThat(value).isEqualTo(0);
+    }
 
 }
